@@ -19,24 +19,50 @@ nav {
   color: #efc2b3;
   display: flex;
   justify-content: space-around;
-  align-items: baseline;
-  font-size: 2rem;
-  height: 10rem;
+  align-items: center;
+  font-size: 1.6rem;
+  height: 8rem;
   text-transform: uppercase;
-  padding-top: 2rem;
   margin: 2rem 2rem 0 2rem;
   width: 98%;
   z-index: 1;
   position: fixed;
 }
 
+
+
 .nav-bar-items {
   display: flex;
   list-style: none;
+  align-items: center;
 }
 
 .nav-bar-items li {
   margin-left: 4rem;
+}
+
+.header-img  img,
+.main-img img {
+  height: 70vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.logo-nav svg {
+  margin-left: -24rem;
+  height: 6rem;
+
+}
+
+.fa-shopping-bag {
+  font-size: 4rem;
+  margin-left: 4rem;
+
+}
+
+.logo-nav svg:hover,
+.nav-bar-items li:hover {
+  color: rgb(235, 121, 87);
 }
 
 /* Section begin */
@@ -51,7 +77,7 @@ nav {
     "...  card-3    card-3 ...";
   gap: 8rem;
   padding: 5rem;
-  margin-bottom: 18rem;
+  margin-bottom: 17rem;
 }
 
 h2 {
@@ -136,6 +162,7 @@ h2 {
 
 .box-4 {
   grid-area: box-4;
+  margin-top: -6rem;
 }
 
 .box-5 {
@@ -144,13 +171,15 @@ h2 {
 
 .product-price-small-box {
   display: flex;
-  width: 100%;
-  padding: 1.8rem 0;
+  justify-content: space-between;
+  margin-top: 2rem;
+  /* width: 100%; */
+  /* padding: 1.8rem 0; */
 }
 
 .product-price-small-box p {
   /* background-color: #efc2b3; */
-  padding-left: 6rem;
+  /* padding-left: 6rem; */
   color: rgb(26, 36, 86);
   font-size: 1.5rem;
   font-weight: 300;
@@ -213,6 +242,7 @@ input[type="email"] {
   padding: 0.5rem 0;
   border: 1px solid #a48a92;
   margin-left: -8rem;
+  margin-right: 1rem;
   color: bisque;
 }
 
@@ -228,6 +258,7 @@ input[type="email"]:focus {
 ::placeholder {
   color: rgb(75, 152, 210);
   font-size: 1rem;
+  padding: 2rem;
 }
 
 .footer-icons {
@@ -254,9 +285,9 @@ footer p:last-child {
   padding-top: 2rem;
 }
 
-/* .footer_fixed {
+.footer_fixed {
   background-color: rgb(196, 190, 182);
-  height: 7vh;
+  height: 5vh;
   width: 100%;
   display: flex;
   align-content: center;
@@ -265,4 +296,11 @@ footer p:last-child {
   position: fixed;
   bottom: 0;
   left: 0;
-} */
+} 
+
+.footer_fixed img {
+  position: absolute;
+  right: 3rem;
+  bottom: 3rem;
+  width: 4rem;
+}
